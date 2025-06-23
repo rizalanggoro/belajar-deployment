@@ -12,8 +12,10 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: Checkout
+        uses: actions/checkout@v4
       - name: Build and push
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: user/app:latest
+          tags: rizalanggoro/belajar-deployment:latest
