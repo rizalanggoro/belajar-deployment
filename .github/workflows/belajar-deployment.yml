@@ -27,4 +27,4 @@ jobs:
         with:
           platforms: linux/arm64
           push: true
-          tags: rizalanggoro/belajar-deployment:latest
+          tags: rizalanggoro/belajar-deployment:latest-multi
